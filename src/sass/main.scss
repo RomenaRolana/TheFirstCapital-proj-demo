@@ -2,6 +2,27 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
+/* ----------  RESET  ---------- */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
 
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* ----------  END RESET  ---------- */
 // Стили для файла с примером HTML-фрагмента
 @import './example';
