@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://RomenaRolana.github.io/teem21-proj-demo",
+  "homepage": "https://RomenaRolana.github.io/team21-proj-demo",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /teem21-proj-demo/"
+    "build": "parcel build src/*.html --public-url /team21-proj-demo/"
   },
   "repository": {
     "type": "git",
