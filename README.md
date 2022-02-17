@@ -1,3 +1,27 @@
+# Структура проекта.
+
+# Hero
+
+# header
+
+# Products
+
+## About
+
+## Advantages
+
+## Gallery
+
+## Customer
+
+## Reviews
+
+## Contacts
+
+## Footer
+
+---
+
 # Parcel boilerplate
 
 ## Скрытые файлы
