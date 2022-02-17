@@ -29,6 +29,11 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 .container {
   min-width: 280px;
