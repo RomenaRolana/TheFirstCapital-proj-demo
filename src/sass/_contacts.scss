@@ -20,10 +20,36 @@
 .contacts {
   background-image: linear-gradient(to bottom, #ffffff 23%, #fff5f6 23%);
 }
-// .representation__card {
-//   border-radius: 0px 0px 4px 4px;
-// }
-
+.representation__card {
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 43px 21px 43px 20px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  max-width: 100 vw;
+}
+.representation__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.representation__link {
+  margin-bottom: 25px;
+}
+.representation__region {
+  margin-bottom: 10px;
+}
+.representation__description {
+  margin-bottom: 50px;
+}
+.schedul__item {
+  margin-bottom: 10px;
+}
+.schedul__list {
+  margin-bottom: 50px;
+}
+.representation__list {
+  margin-bottom: 54px;
+}
 // .primary-button {
 //   display: inline-block;
 //   // @include fonts($white-color, 700, 16px, 1.88, 0.06em);
