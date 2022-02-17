@@ -1,7 +1,9 @@
 // Здесь пишутся настройки по-умолчанию
 
 body {
-  font-family: Roboto;
+  font-family: DM Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
 }
@@ -26,4 +28,24 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.container {
+  min-width: 280px;
+  // padding-left: 15px;
+  // padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 700px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1050px;
+  }
 }
