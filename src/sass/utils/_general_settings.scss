@@ -36,10 +36,26 @@ img {
   height: auto;
 }
 
+// Карточки и их размеры
+
+.card-set {
+  // display-flex каждый подключает себе отдельно, если надо
+  margin-left: calc(var(--card-gap) * -1);
+  margin-top: calc(var(--card-gap) * -1);
+}
+
+.card-set-item {
+  flex-basis: calc(100% / var(--card-item) - var(--card-gap));
+  margin-left: var(--card-gap);
+  margin-top: var(--card-gap);
+}
+
+// контейнер
+
 .container {
   min-width: 280px;
-  // padding-left: 15px;
-  // padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 
@@ -51,7 +67,7 @@ img {
     width: 700px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 1050px;
   }
 }
