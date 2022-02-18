@@ -36,16 +36,16 @@
 // .overlay {
 //   height: 382px;
 //   @media screen and (min-width: 1280px) {
-//     background-image: url(../images/contacts_img/sectionbg_pink_dots.svg);
+//     background-image: url(../src/images/Contacts_img/sectionbg-dots-1x-1280-min.png);
 
 //     background-position: center;
 //     background-size: cover;
 //     background-repeat: no-repeat;
 //     flex-grow: 1;
 
-//     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-//       background-image: url(../src/images/contacts_img/sectionbg_pink_dots.svg);
-//     }
+//     // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//     //   background-image: url(../src/images/contacts_img/sectionbg_pink_dots.svg);
+//     // }
 //   }
 // }
 // .main__overlay {
@@ -58,7 +58,7 @@
   border-radius: 24px;
   padding: 43px 21px 43px 20px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  max-width: 100 vw;
+  // max-width: 100 vw;
   @media screen and (min-width: 768px) {
     padding: 50px 32px 50px 31px;
   }
@@ -89,6 +89,12 @@
 
 .representation__link {
   margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32pxpx;
+  }
 }
 .representation__region {
   font-weight: 500;
@@ -100,9 +106,11 @@
   margin-bottom: 10px;
   @media screen and (min-width: 768px) {
     font-size: 14px;
+    margin-bottom: 14px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
+    margin-bottom: 10px;
   }
 }
 .representation__description {
@@ -113,17 +121,39 @@
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.66;
+    margin-bottom: 60px;
+    max-width: none;
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.83;
+    margin-bottom: 64 px;
   }
 }
 .schedul__item {
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent 0 233px,
+      #e1e1e1 233px 234px,
+      transparent 234px 429px,
+      #e1e1e1 429px 430px
+    );
+  }
 }
 .schedul__list {
   margin-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 64px;
+  }
 }
 .representation__list {
   margin-bottom: 54px;
@@ -198,26 +228,59 @@
     margin-bottom: 10px;
   }
 }
+.representation__button-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+.primary-btn {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 2.75;
+  font-weight: 700;
+  padding: 0 15px;
+  border-radius: 22px;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  min-width: 160px;
+  border: 0px solid transparent;
 
-// .primary-button {
-//   display: inline-block;
-//   // @include fonts($white-color, 700, 16px, 1.88, 0.06em);
-//   padding: 10px 32px;
-//   border-radius: 4px;
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//   min-width: 200px;
-//   border: 0px solid transparent;
-//   // color: white-color;
-//   background-color: $accent-color;
-//   cursor: pointer;
+  background-color: #d41342;
+  color: var(--secondary-logo-color);
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
 
-//   &:hover {
-//     background-color: #188ce8;
-//   }
-//   &__send {
-//     fill: $white-color;
-//     @media screen and (max-width: 1199px) {
-//       margin-left: 10px;
-//     }
-//   }
-// }
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  }
+  &__send {
+    fill: var(--secondary-logo-color);
+
+    margin-left: 8px;
+  }
+}
+.primary-btn--invert {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 2.75;
+  font-weight: 700;
+  padding: 0 30px;
+  border-radius: 22px;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  min-width: 160px;
+  border: 0px solid transparent;
+  background-color: var(--secondary-logo-color);
+  color: var(--first-logo-color);
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  }
+  &__send {
+    fill: var(--first-logo-color);
+    margin-left: 15px;
+  }
+}
