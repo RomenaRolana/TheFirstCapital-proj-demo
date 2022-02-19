@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/demo.jpg":[["demo.090c7c6d.jpg","nKR3"],"nKR3"],"./../images/Advantages_img/icon1.svg":[["icon1.a42e4dd0.svg","UIYN"],"UIYN"],"./../images/Advantages_img/icon2.svg":[["icon2.5bd44b59.svg","l5o1"],"l5o1"],"./../images/Advantages_img/icon3.svg":[["icon3.643f93d9.svg","VYLM"],"VYLM"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),(()=>{const e=document.querySelector("[data-menu-button]"),t=document.querySelector("[data-menu]");e.addEventListener("click",()=>{const s="true"===e.getAttribute("aria-expanded")||!1;e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!s),t.classList.toggle("is-open")})})();
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/TheFirstCapital-proj-demo/src.14b1c7f6.js.map
+//# sourceMappingURL=/TheFirstCapital-proj-demo/src.8181313f.js.map
