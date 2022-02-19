@@ -1,10 +1,4 @@
 
-// .about-img {
-//     display: block;
-//     width: 280px;
-//     height: 280px;
-// }
-
 .about {
     background-color: var(--secondary-bg-color);
     padding-top: 125px;
@@ -26,13 +20,15 @@
 }
 .about-bg {
     @media screen and (max-width: 767px) {
-        background: url(../images/About_img/about-bg-left.png) no-repeat left (bottom 100px), url(../images/About_img/about-bg-right.png) no-repeat (bottom 100px) right ;
+        background: url(../images/About_img/about-bg-left-tel.png) no-repeat left (bottom 100px), url(../images/About_img/about-bg-right-tel.png) no-repeat (bottom 100px) right ;
         background-color: var(--secondary-bg-color);
+        
     }
+
 
     background-color: var(--secondary-bg-color);
     @media screen and (min-width: 1200px) {
-        background: url(../images/About_img/about-bg-left-desk-1x.png) no-repeat left bottom, url(../images/About_img/about-bg-right-desk-1x.png) no-repeat bottom right ;
+        background: url(../images/About_img/about-bg-left-desk.png) no-repeat left bottom, url(../images/About_img/about-bg-right-desk.png) no-repeat bottom right ;
         background-color: var(--secondary-bg-color);
     }
 }
@@ -93,10 +89,7 @@
     @media screen and (min-width: 768px) {
         display: flex;
     }
-    // @media screen and (min-width: 1200px) {
-    //     width: 1200px;
-        
-    // }
+
 }
 
 .about-image {
@@ -189,4 +182,3 @@
         margin-left: 30px;
     }
 }
-    

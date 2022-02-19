@@ -4,7 +4,24 @@
         <h2 class="about__title">how it’s made?</h2>
         <div class="about-content">
             <div class="about-image">
-                <img class="about__img" src="./images/About_img/about-cow.png" alt="cow" width="279" width="279">
+                <picture>
+                    <source
+                        srcset="./images/About_img/about-cow-1x-tel.png 1x,
+                                ./images/About_img/about-cow-2x-tel.png 2x"
+                        media="(min-width: 320px)"
+                    />
+                    <source
+                        srcset="./images/About_img/about-cow-1x-tab.png 1x,
+                                ./images/About_img/about-cow-2x-tab.png 2x"
+                        media="(min-width: 768px)"
+                    />
+                    <source
+                        srcset="./images/About_img/about-cow-1x-desk.png 1x,
+                                ./images/About_img/about-cow-2x-desk.png 2x"
+                        media="(min-width: 1280px)"
+                    />
+                    <img src="./images/About_img/about-cow-1x-desk.png" alt="cow">
+                </picture>
             </div>
             
             <div class="about-text">

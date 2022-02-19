@@ -413,14 +413,14 @@ ul {
 
 @media screen and (max-width: 767px) {
   .about-bg {
-    background: url(../images/About_img/about-bg-left.png) no-repeat left bottom 100px, url(../images/About_img/about-bg-right.png) no-repeat bottom 100px right;
+    background: url(../images/About_img/about-bg-left-tel.png) no-repeat left bottom 100px, url(../images/About_img/about-bg-right-tel.png) no-repeat bottom 100px right;
     background-color: var(--secondary-bg-color);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .about-bg {
-    background: url(../images/About_img/about-bg-left-desk-1x.png) no-repeat left bottom, url(../images/About_img/about-bg-right-desk-1x.png) no-repeat bottom right;
+    background: url(../images/About_img/about-bg-left-desk.png) no-repeat left bottom, url(../images/About_img/about-bg-right-desk.png) no-repeat bottom right;
     background-color: var(--secondary-bg-color);
   }
 }
