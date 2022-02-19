@@ -178,7 +178,25 @@
 }
 
 .about__btn {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 2.75;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 37px;
+    color: var(--first-logo-color);
+    background: #FFFFFF;
+    border-radius: 22px;
+    border: none;
+
     @media screen and (max-width: 767px) {
         margin-left: 30px;
     }
+
+}
+
+.btn__icon {
+
+    margin-left: 10px;
 }
