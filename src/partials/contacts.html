@@ -1,8 +1,8 @@
 <section class="contacts">
   <div class="container contacts-main overlay main__overlay">
     <h1 class="contacts__titl, visually-hidden">Section Contact</h1>
-    <ul class="representation__list list">
-      <li class="representation__item">
+    <ul class="representation__list list card-set">
+      <li class="representation__item card-set-item">
         <div class="representation__card">
           <a href="" class="representation__link no-link">
             <button type="button" class="representation__name">CAFE</button>
@@ -36,7 +36,7 @@
           </ul>
         </div>
       </li>
-      <li class="representation__item">
+      <li class="representation__item card-set-item">
         <div class="representation__card">
           <a href="" class="representation__link no-link">
             <button type="button" class="representation__name">FOOD TRUCK</button>
@@ -69,7 +69,7 @@
           </ul>
         </div>
       </li>
-      <li class="representation__item">
+      <li class="representation__item card-set-item">
         <div class="representation__card">
           <a href="" class="representation__link no-link">
             <button type="button" class="representation__name">CAFE</button>
@@ -106,21 +106,39 @@
 
     <ul class="representation__button-block list">
       <li class="button-block__item">
-        <button type="button" class="primary-btn">
+        <button type="button " class="primary-btn" data-modal-open>
           Our Locations
-          <svg class="primary-btn__send" width="24" height="24">
-            <use href="../src/images/Footer_img/telegram_red.svg"></use>
-          </svg>
+          <!-- <img src="./images/Footer_img/telegram_red.svg" width="16" height="16" alt="" /> -->
+          <!-- <svg class="primary-btn__send" width="24" height="24">
+            <use href="./images/Footer_img/telegram_red.svg"></use>
+          </svg> -->
         </button>
       </li>
       <li class="button-block__item">
         <button type="button" class="primary-btn--invert">
           Franchise
           <svg class="primary-btn--invert__send" width="24" height="24">
-            <use href="../src/images/Footer_img/telegram_red.svg"></use>
+            <use href="./images/Footer_img/telegram_red.svg"></use>
           </svg>
         </button>
       </li>
     </ul>
   </div>
 </section>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button data-modal-close type="button" class="modal__close">
+      <!-- <svg class="modal__icon" width="18" height="18">
+        <use href="/src/images/Footer_img/facebook_pink.svg"></use>
+      </svg> -->
+    </button>
+    <div class="modal-map">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nostrum doloribus rerum
+        quidem quos dolorem consequuntur, voluptate porro placeat accusantium reiciendis dolor fuga
+        tenetur ipsam aspernatur corrupti quisquam vel itaque!
+      </p>
+      <a href="https://goo.gl/maps/aLbNxv7mvmdp4p4a8"> </a>
+    </div>
+  </div>
+</div>
