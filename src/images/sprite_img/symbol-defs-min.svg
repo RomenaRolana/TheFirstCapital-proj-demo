@@ -30,8 +30,8 @@
             <path d="M0 0h127.36v32H0z"/>
         </symbol>
         <symbol id="icon-right-arrow" viewBox="0 0 42 32">
-            <path fill="none" stroke="#d41443" style="stroke:var(--color3, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M25.6 3.2 38.4 16 25.6 28.8"/>
-            <path fill="none" stroke="#d41443" style="stroke:var(--color3, #d41443)" stroke-linecap="round" stroke-width="6.4" d="M3.2 16H32"/>
+            <path fill="none"   stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M25.6 3.2 38.4 16 25.6 28.8"/>
+            <path fill="none"  stroke-linecap="round" stroke-width="6.4" d="M3.2 16H32"/>
         </symbol>
         <symbol id="icon-right-sign" viewBox="0 0 22 32">
             <path fill="none" stroke="#d41443" style="stroke:var(--color3, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-width="6.4" d="M3.472 3.2 17.168 16 3.472 28.8"/>

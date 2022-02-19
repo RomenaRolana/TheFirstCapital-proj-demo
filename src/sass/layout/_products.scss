@@ -1,13 +1,11 @@
-.section__products {
-  padding: 123px 0 98px;
-}
-
 .products {
+  padding: 123px 0 98px;
   .card-set {
     display: flex;
     flex-wrap: wrap;
     --card-item: 1;
     --card-gap: 130px;
+    align-items: flex-start;
 
     @media screen and (min-width: 768px) {
       --card-item: 3;
@@ -18,8 +16,26 @@
       --card-gap: 24px;
     }
   }
+  .title {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 150px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 259px;
+    }
+  }
 
-  .card-set-item {
+  .pretitle {
+    margin-bottom: 13px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 15px;
+    }
+  }
+  .is-hidden {
+    display: none;
+  }
+
+  &__item {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -27,7 +43,6 @@
     padding: 161px 40px 41px;
     background-color: var(--first-card);
     border-radius: 24px;
-    flex-basis: calc((100% - (var(--card-gap) * (var(--card-item)-1))) / var(--card-item));
 
     &:nth-child(3n + 2) {
       background-color: var(--second-card);
@@ -36,25 +51,22 @@
       background-color: var(--third-card);
     }
 
-    @media screen and (max-width: 767px) {
-      min-width: 280px;
-    }
+    // @media screen and (max-width: 767px) {
+    //   min-width: 280px;
+    // }
 
     @media screen and (min-width: 768px) {
       padding: 152px 20px 40px;
-      min-width: 220px;
+      // min-width: 220px;
     }
-    @media screen and (min-width: 1200px) {
-      padding: 163px 30px 50px;
-      // max-width: 335px;
-    }
+
     @media screen and (min-width: 1280px) {
       padding: 163px 44px 50px;
-      max-width: 335px;
+      // max-width: 335px;
     }
   }
 
-  .products__item::before {
+  &__item::before {
     position: absolute;
     top: -113px;
     left: 50%;
@@ -87,7 +99,7 @@
     }
   }
 
-  .products__item:nth-child(2)::before {
+  &__item:nth-child(2)::before {
     background-image: url(../images/products_img/ice-coffee-mob@1x.png);
 
     @media screen and (min-width: 768px) {
@@ -99,7 +111,7 @@
     }
   }
 
-  .products__item:nth-child(3)::before {
+  &__item:nth-child(3)::before {
     background-image: url(../images/products_img/milkshake-mob@1x.png);
 
     @media screen and (min-width: 768px) {
@@ -110,7 +122,6 @@
       background-image: url(../images/products_img/milkshake-desk@1x.png);
     }
   }
-
   &__title {
     margin-bottom: 30px;
     font-family: Titan One;
@@ -146,45 +157,11 @@
     }
   }
 
-  .section__title {
-    margin-bottom: 144px;
-    @media screen and (min-width: 768px) {
-      margin-bottom: 150px;
-      font-size: 48px;
-      line-height: (55 / 48);
-    }
-    @media screen and (min-width: 1280px) {
-      margin-bottom: 259px;
-      font-size: 58px;
-      line-height: (66 / 58);
-      letter-spacing: 0.06em;
-    }
-  }
-
-  .products__pretitle {
-    margin-bottom: 13px;
-    @media screen and (min-width: 768px) {
-      font-size: 26px;
-      line-height: (30 / 26);
-      margin-bottom: 15px;
-    }
-    @media screen and (min-width: 1280px) {
-      font-size: 30px;
-      line-height: (34 / 30);
-      letter-spacing: 0.04em;
-    }
-  }
-
-  .products__desc {
+  &__desc {
     margin-bottom: 30px;
-    height: 213px;
-    overflow: hidden;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 40px;
-    }
-    @media screen and (min-width: 1200px) {
-      height: 210px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -193,28 +170,20 @@
   }
 
   &__text {
+    min-height: 200px;
     text-align: center;
-    font-weight: 700;
-    font-size: 14px;
     line-height: 1.76;
     letter-spacing: 0.04em;
     color: var(--secondary-logo-color);
-    width: 100%;
 
-    @media screen and (min-width: 768px) {
-      font-size: 14px;
-      line-height: 1.74;
-      max-width: 198px;
-    }
-
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
+      min-height: 170px;
       font-size: 16px;
-      line-height: 1.75;
       letter-spacing: 0.02em;
       //   max-width: 330px;
     }
   }
-  .products__button {
+  &__button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,9 +193,23 @@
     background-color: var(--secondary-logo-color);
     border: 0;
     border-radius: 50%;
+    transform: rotate(0);
+    cursor: pointer;
+
+    &:hover .products__icon,
+    &:focus .products__icon {
+      stroke: #ab042c;
+    }
   }
-  .products__icon {
+
+  .transform {
+    transform: rotate(270deg);
+  }
+
+  &__icon {
     width: 12px;
     height: 12px;
+    stroke: var(--first-logo-color);
+    transition: var(--animation-duration) var(--animation-timing-function);
   }
 }
