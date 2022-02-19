@@ -1,0 +1,21 @@
+.title {
+  margin: 0 auto;
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: (39 / 34);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--first-logo-color);
+}
+
+.pretitle {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: (21 / 18);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--third-logo-color);
+}
