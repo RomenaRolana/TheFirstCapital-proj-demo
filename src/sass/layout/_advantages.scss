@@ -49,7 +49,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center left;
-        background-image: url(../images/Advantages_img/icon1.svg);
+        background-image: url(../images/Advantages_img/icon1.png);
 
             @media screen and (min-width: 768px) {
                 margin-bottom: 36px;
@@ -61,11 +61,11 @@
     }
 
         .advantages__item:nth-child(2) &::before{
-            background-image: url(../images/Advantages_img/icon2.svg);
+            background-image: url(../images/Advantages_img/icon2.png);
         }
 
         .advantages__item:nth-child(3) &::before {
-            background-image: url(../images/Advantages_img/icon3.svg);
+            background-image: url(../images/Advantages_img/icon3.png);
         }
         
     }
