@@ -1,0 +1,10 @@
+.gallery {
+  &__bg {
+    height: 300px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--secondary-bg-color) 40%,
+      var(--primary-bg-color) 40%
+    );
+  }
+}
