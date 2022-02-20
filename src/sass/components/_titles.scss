@@ -1,0 +1,39 @@
+.title {
+  margin: 0 auto;
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: (39 / 34);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--first-logo-color);
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: (55 / 48);
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: (66 / 58);
+    letter-spacing: 0.06em;
+  }
+}
+
+.pretitle {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: (21 / 18);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--third-logo-color);
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: (30 / 26);
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: (34 / 30);
+    letter-spacing: 0.04em;
+  }
+}
