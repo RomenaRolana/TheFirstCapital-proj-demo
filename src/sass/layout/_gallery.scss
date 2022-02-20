@@ -6,6 +6,7 @@
     var(--secondary-bg-color) 40%,
     var(--primary-bg-color) 40%
   );
+
   &__body {
     width: 100%;
     display: grid;
@@ -63,5 +64,13 @@
 
   &__image {
     border-radius: 5px;
+
+    @media screen and (min-width: 768px) {
+      border-radius: 15px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      border-radius: 20px;
+    }
   }
 }
