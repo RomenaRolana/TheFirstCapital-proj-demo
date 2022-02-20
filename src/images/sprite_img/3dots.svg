@@ -1,1 +1,9 @@
+<<<<<<< HEAD
+<svg width="26" height="6" viewBox="0 0 26 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="13" cy="3" r="3" fill="white"/>
+<circle cx="3" cy="3" r="3" fill="white"/>
+<circle cx="23" cy="3" r="3" fill="white"/>
+</svg>
+=======
 <svg width="26" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="3" r="3" fill="#fff"/><circle cx="3" cy="3" r="3" fill="#fff"/><circle cx="23" cy="3" r="3" fill="#fff"/></svg>
+>>>>>>> 7c2ccc506ce6ec4acc5d3ea3dec1fb1552593b84
