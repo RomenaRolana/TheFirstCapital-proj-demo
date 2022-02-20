@@ -20,8 +20,9 @@
 		<symbol id="icon-close-icon-modal" viewBox="0 0 32 32">
 <path  d="M26.667 9.081l-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"></path>
 </symbol>
-<symbol id="icon-arrow" viewBox="0 0 26 32">
-<path fill=" " stroke=" " style="stroke: var(--color1)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.172 3.2l14.169 12.8-14.169 12.8"></path>
+
+<symbol id="icon-circle-right" viewBox="0 0 32 32">
+<path d="M11.086 22.086l2.829 2.829 8.914-8.914-8.914-8.914-2.828 2.828 6.086 6.086z"></path>
 </symbol>
 	</defs>
 </svg>
