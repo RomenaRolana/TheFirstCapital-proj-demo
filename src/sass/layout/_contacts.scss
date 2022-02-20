@@ -24,7 +24,7 @@
         var(--secondary-logo-color) 0 165px,
         var(--secondary-bg-color) 165px
       );
-    background-position: top 99px center, center;
+    background-position: top 150px center, center;
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -162,8 +162,8 @@
   color: var(--third-text-color);
   margin-bottom: 25px;
   padding-bottom: 25px;
-  border-bottom: 1px solid red;
-  max-width: 179px;
+  border-bottom: 1px solid #e1e1e1;
+
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.66;
@@ -193,7 +193,10 @@
   }
 }
 .schedul__list {
-  margin-bottom: 50px;
+  margin-bottom: 25pxpx;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 60px;
   }
@@ -269,6 +272,7 @@
   text-align: center;
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: center;
   }
 }
 .button-block__item {

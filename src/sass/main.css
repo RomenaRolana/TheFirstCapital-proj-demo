@@ -507,7 +507,7 @@ ul {
 @media screen and (min-width: 1280px) {
   .contacts {
     background-image: url(../images/contacts_img/contacts-bg.png), linear-gradient(to bottom, var(--secondary-logo-color) 0 165px, var(--secondary-bg-color) 165px);
-    background-position: top 99px center, center;
+    background-position: top 150px center, center;
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -616,8 +616,7 @@ ul {
   color: var(--third-text-color);
   margin-bottom: 25px;
   padding-bottom: 25px;
-  border-bottom: 1px solid red;
-  max-width: 179px;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 @media screen and (min-width: 768px) {
@@ -655,7 +654,9 @@ ul {
 }
 
 .schedul__list {
-  margin-bottom: 50px;
+  margin-bottom: 25pxpx;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 @media screen and (min-width: 768px) {
@@ -753,6 +754,9 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
