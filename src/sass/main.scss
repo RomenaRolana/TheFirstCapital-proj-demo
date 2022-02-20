@@ -4,11 +4,12 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';
+// @import './example';
 @import './utils/res';
 @import './utils/general_settings';
 @import './utils/variables';
-@import './utils/res';
+// @import './utils/res';
+@import './components/titles';
 @import './layout/hero_header';
 @import './layout/products';
 @import './layout/about';
