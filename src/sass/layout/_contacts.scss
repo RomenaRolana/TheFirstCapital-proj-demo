@@ -1,35 +1,70 @@
-// .container {
-//   height: 100vh;
-//   // width: 1200px;
-//   //   position: relative;
-
-//   //   padding: 0px 15px;
-//   margin-left: auto;
-//   margin-right: auto;
-
-//   @media screen and (min-width: 320px) {
-//     width: 320px;
-//   }
-//   @media screen and (min-width: 772px) {
-//     width: 772px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     width: 1280px;
-//   }
-// }
 .contacts {
   background-image: linear-gradient(
     to bottom,
-    var(--secondary-logo-color) 8.5%,
-    var(--secondary-bg-color) 8.5%
+    var(--secondary-logo-color) 8.3%,
+    var(--secondary-bg-color) 8.3%
   );
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--secondary-logo-color) 18%,
+      var(--secondary-bg-color) 18%
+    );
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--secondary-logo-color) 20.7%,
+      var(--secondary-bg-color) 20.7%
+    );
+  }
 }
+
+.contacts-main {
+  padding-top: 45px;
+  padding-bottom: 55px;
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 76px;
+    padding-bottom: 83px;
+    // background-image: url(../src/images/Contacts_img/sectionbg_pink_dots.svg);
+  }
+}
+// .overlay {
+//   height: 382px;
+//   @media screen and (min-width: 1280px) {
+//     background-image: url(../images/contacts_img/sectionbg_pink_dots.svg);
+
+//     background-position: center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     flex-grow: 1;
+
+//     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//       background-image: url(../src/images/contacts_img/sectionbg_pink_dots.svg);
+//     }
+//   }
+// }
+// .main__overlay {
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
 .representation__card {
   background-color: #ffffff;
   border-radius: 24px;
   padding: 43px 21px 43px 20px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   max-width: 100 vw;
+  @media screen and (min-width: 768px) {
+    padding: 50px 32px 50px 31px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 51px 44px 62px 43px;
+  }
 }
 .representation__item {
   font-weight: 500;
@@ -39,7 +74,19 @@
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 40px) / 3);
+    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
+
 .representation__link {
   margin-bottom: 25px;
 }
@@ -51,12 +98,26 @@
 
   color: var(--primary-text-color);
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 .representation__description {
   line-height: 1.5;
   color: var(--third-text-color);
   margin-bottom: 50px;
   max-width: 179px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.83;
+  }
 }
 .schedul__item {
   margin-bottom: 10px;
@@ -66,7 +127,22 @@
 }
 .representation__list {
   margin-bottom: 54px;
+
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 480px) {
+    max-width: 220px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    max-width: none;
+    margin-top: -20px;
+    margin-left: -20px;
+
+    // flex-wrap: wrap;
+  }
 }
+
 .representation__name {
   align-items: center;
   text-align: center;
@@ -76,6 +152,10 @@
   border-radius: 4px;
   border: 1px solid transparent;
   padding: 0 30px;
+  @media screen and (min-width: 768px) {
+    padding: 0 15px;
+    font-size: 16px;
+  }
 }
 
 .representation__item:nth-child(2n) {
@@ -89,6 +169,11 @@
 .schedul__time {
   color: var(--third-logo-color);
 }
+// .contact__item {
+//   @media screen and (min-width: 768px) {
+//     line-height: 1.83;
+//   }
+// }
 .contact__link {
   font-family: DM Sans;
   font-style: normal;
@@ -97,6 +182,21 @@
   line-height: 1.5;
 
   color: var(--third-text-color);
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.83;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+.representation__button-block {
+  text-align: center;
+}
+.button-block__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 // .primary-button {
