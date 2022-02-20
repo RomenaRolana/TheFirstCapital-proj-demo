@@ -2,6 +2,7 @@
     background-color: var(--hero-bg-color);
 }
 
+
 .header{
     display: flex;
     align-items: center;
@@ -9,6 +10,7 @@
 
     padding-top: 37px;
 }
+
 
 .logo{
     display: flex;
@@ -48,6 +50,7 @@
     background: #FFFFFF;
     border-radius: 22px;
     border: none;
+    cursor: pointer;
 
     @media screen and (max-width: 767px) {
         margin-left: 30px;
@@ -62,6 +65,7 @@
 
 }
 
+
 .navigation{
     list-style: none;
     display: flex;
@@ -72,6 +76,7 @@
         font-size: 16px;
         line-height: 1.31;
         color: var(--secondary-logo-color);
+        cursor: pointer;
 
         margin-right: 35px;
     }
@@ -89,6 +94,99 @@
     }
 }
 
+.hero{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    padding-bottom: 56px;
+
+}
+
+
+.hero-title{
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--secondary-logo-color);
+
+    &--alternative{
+        font-size: 58px;
+        line-height: 0.9;
+        color: var(--first-logo-color);
+    }
+}
+
+
+  .hero-btn {  
+    display: inline-block;
+    margin-top: 25px;
+
+    font-size: 16px;
+    line-height: 2.75;
+    font-weight: 700;
+    padding: 0 15px;
+    border-radius: 22px;
+    min-width: 160px;
+    border: 0px solid transparent;
+  
+    background-color: var(--first-logo-color);
+    color: var(--secondary-logo-color);
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+  
+    &:hover,
+    &:focus {
+      background-color: var(--primary-btn-hover);
+    }
+
+    &--alternative{
+        background-color: var(--secondary-logo-color);
+        color: var(--first-logo-color);
+        margin-left: 15px;
+    }
+
+    &--alternative:hover, &--alternative:focus{
+        background-color: #ecebeb;
+        color: var(--first-logo-color);
+    }
+  }
+
+.hero-text{
+    display: block;
+    width: 200px;
+
+    margin-top: 112px;
+
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: var(--secondary-logo-color);
+}
+
+.extra-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-logo-color);
+    border: 0;
+    border-radius: 50%;
+    transform: rotate(0);
+    cursor: pointer;
+
+    // &:hover .products__icon,
+    // &:focus .products__icon {
+    //   stroke: #ab042c;
+    // }
+}
 
 // .hero__button {
 //     display: inline-block;
