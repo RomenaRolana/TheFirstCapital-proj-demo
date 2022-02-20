@@ -367,8 +367,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(360deg) scale(1);
-  max-width: 400px;
-  max-height: 600px;
+  max-width: 600px;
+  max-height: 400px;
   padding: 20px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
   width: 90vw;
@@ -376,16 +376,41 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) rotate(0deg) scale(0.5);
   }
-  // @media screen and (min-width: 450px) {
-  //   width: 400px;
-  //   height: 600px;
-  // }
+  @media screen and (min-width: 768px) {
+    width: 600px;
+    height: 400px;
+  }
 
-  // @media screen and (min-width: 1280px) {
-  //   width: 550px;
-  //   height: 650px;
-  // }
+  @media screen and (min-width: 1280px) {
+    max-width: 650px;
+    max-height: 550px;
+  }
 }
-modal-map {
-  height: 600px;
+.modal-map {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  &__client-location {
+    margin-bottom: 10px;
+  }
 }
+.modal-map__client {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+
+  box-shadow: 0px 8px 30px var(--secondary-logo-color);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.2);
+  }
+}
+.modal-map__client-location {
+  height: 29%;
+  position: relative;
+}
+// .modal-map__client-location {
+//   max-width: 100%;
+//   max-height: 33.3%;
+// }
