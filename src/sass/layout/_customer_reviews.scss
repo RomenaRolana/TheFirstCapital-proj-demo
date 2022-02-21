@@ -1,0 +1,103 @@
+.customer-reviews {
+  padding-top: 80px;
+  padding-bottom: 129px;
+  &__bg {
+    background-color: #fafafa;
+    height: 308px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url(../images/customer_reviews_img/lapky.svg);
+    background-repeat: no-repeat;
+    background-size: 54px 40px;
+    background-position: top 28px left 61px;
+  }
+
+  &__slide {
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__foto {
+    width: 85px;
+    height: 85px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+
+  &_text {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+    color: #000000;
+    text-align: center;
+    width: 157px;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 43px;
+    padding-bottom: 20px;
+    background-image: repeating-linear-gradient(0deg, #e1e1e1 0 1px, transparent 1px 31px);
+  }
+}
+.customer-reviews__name {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+
+  &::before {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    content: '';
+    width: 32px;
+    height: 4px;
+    margin-bottom: 15px;
+    margin-top: 54px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/customer_reviews_img/group.svg);
+  }
+}
+.autoplay {
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    li {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #d9d9d9;
+      &:not(:last-child) {
+        margin-right: 18px;
+      }
+      &.slick-active {
+        background-color: transparent;
+        background-image: url(../images/customer_reviews_img/home_dot.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    button {
+      color: transparent;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
