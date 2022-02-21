@@ -1,4 +1,4 @@
-<div class="header-hero">
+<div class="header-hero" id="header-hero">
     <header class="container header">
         <div class="logo">
             <img src="./images/hero_header_img/logo.png" alt="" class="logo__icon">
@@ -6,13 +6,13 @@
         </div>
 
         <nav> 
-        <ul class="navigation">
-            <li class="navigation__item navigation__item--current-page">Home</li>
-            <li class="navigation__item">About us</li>
-            <li class="navigation__item">How it’s made?</li>
-            <li class="navigation__item">Our products</li>
-            <li class="navigation__item">Contact</li>
-        </ul>
+            <ul class="navigation">
+                <li class="navigation__item"><a href="#header-hero" class="navigation__link navigation__link--current-page">Home</a></li>
+                <li class="navigation__item"><a href="#contacts" class="navigation__link">About us</a></li>
+                <li class="navigation__item"><a href="#about" class="navigation__link">How it’s made?</a></li>
+                <li class="navigation__item"><a href="#products" class="navigation__link">Our products</a></li>
+                <li class="navigation__item"><a href="#footer" class="navigation__link">Contact</a></li>
+            </ul>
         </nav>
 
         <button type="button" class="header-btn">
@@ -41,18 +41,18 @@
     <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
 
     <button type="button" class="extra-button">
-        <svg>
-            <use href="./images/sprite_img/symbol-defs-min.svg#icon-right-arrow">
-            </use>
-        </svg>
+            <svg class="extra-button__icon">
+                <use href="./images/sprite_img/symbol-defs-min.svg#icon-right-arrow">
+                </use>
+            </svg>
     </button>
 
     </div>
 
     <div>
-        <ul>
-            <li>16<span>cafes</span></li>
-            <li>23<span>food trucks</span></li>
+        <ul class="extra-list">
+            <li class="extra-list__item">16<span class="extra-list__text">cafes</span></li>
+            <li class="extra-list__item">23<span class="extra-list__text">food trucks</span></li>
         </ul>
     </div>
 
