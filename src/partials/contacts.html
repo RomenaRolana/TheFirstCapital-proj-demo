@@ -8,17 +8,17 @@
             <button type="button" class="representation__name">CAFE</button>
           </a>
 
-          <h3 class="representation__region">Chicago</h3>
-          <p class="representation__description">
+          <h3 class="representation__region text-main">Chicago</h3>
+          <p class="representation__description text-description">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
           </p>
           <ul class="schedul__list list">
             <li class="schedul__item">
-              <p class="schedul__days">Monday - Friday</p>
+              <p class="schedul__days text-main">Monday - Friday</p>
               <p class="schedul__time">06:00 AM - 10:00 PM</p>
             </li>
             <li class="schedul__item--day-off">
-              <p class="schedul__days">Saturday - Sunday</p>
+              <p class="schedul__days text-main">Saturday - Sunday</p>
               <p class="schedul__time">08:00 AM - 16:00 PM</p>
             </li>
           </ul>
@@ -41,17 +41,17 @@
           <a href="" class="representation__link no-link">
             <button type="button" class="representation__name">FOOD TRUCK</button>
           </a>
-          <h3 class="representation__region">Los Angeles</h3>
-          <p class="representation__description">
+          <h3 class="representation__region text-main">Los Angeles</h3>
+          <p class="representation__description text-description">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
           </p>
           <ul class="schedul__list list">
             <li class="schedul__item">
-              <p class="schedul__days">Monday - Friday</p>
+              <p class="schedul__days text-main">Monday - Friday</p>
               <p class="schedul__time">06:00 AM - 10:00 PM</p>
             </li>
             <li class="schedul__item">
-              <p p class="schedul__days">Saturday - Sunday</p>
+              <p p class="schedul__days text-main">Saturday - Sunday</p>
               <p class="schedul__time">08:00 AM - 16:00 PM</p>
             </li>
           </ul>
@@ -74,17 +74,17 @@
           <a href="" class="representation__link no-link">
             <button type="button" class="representation__name">CAFE</button>
           </a>
-          <h3 class="representation__region">New York</h3>
-          <p class="representation__description">
+          <h3 class="representation__region text-main">New York</h3>
+          <p class="representation__description text-description">
             Fusce ut velit laoreet, tempus arcu molestie vulputate
           </p>
           <ul class="schedul__list list">
             <li class="schedul__item">
-              <p class="schedul__days">Monday - Friday</p>
+              <p class="schedul__days text-main">Monday - Friday</p>
               <p class="schedul__time">06:00 AM - 10:00 PM</p>
             </li>
             <li class="schedul__item">
-              <p p class="schedul__days">Saturday - Sunday</p>
+              <p p class="schedul__days text-main">Saturday - Sunday</p>
               <p class="schedul__time">08:00 AM - 16:00 PM</p>
             </li>
           </ul>
@@ -109,16 +109,16 @@
         <button type="button " class="primary-btn" data-location-open>
           Our Locations
 
-          <svg class="primary-btn__send" width="10" height="14">
-            <use href="./images/footer_img/symbol-defs.svg#icon-arrow"></use>
+          <svg class="primary-btn__send" width="20" height="20">
+            <use href="./images/footer_img/symbol-defs.svg#icon-circle-right"></use>
           </svg>
         </button>
       </li>
       <li class="button-block__item">
-        <button type="button" class="primary-btn--invert">
+        <button type="button" class="primary-btn primary-btn--invert" data-agreement-open>
           Franchise
-          <svg class="primary-btn--invert__send" width="10" height="14">
-            <use href="./images/footer_img/symbol-defs.svg#icon-arrow"></use>
+          <svg class="primary-btn--invert__send" width="20" height="20">
+            <use href="./images/footer_img/symbol-defs.svg#icon-circle-right"></use>
           </svg>
         </button>
       </li>
@@ -183,6 +183,76 @@
           loading="lazy"
         ></iframe>
       </div>
+    </div>
+  </div>
+</div>
+<div class="backdrop is-hidden" data-agreement>
+  <div class="modal">
+    <button data-agreement-close type="button" class="modal__close">
+      <svg class="modal__icon" width="18" height="18">
+        <use href="./images/footer_img/symbol-defs.svg#icon-close-icon-modal"></use>
+      </svg>
+    </button>
+    <div class="modal-franchise__agreement">
+      <p class="text-main">Franchise agreement</p>
+      <p class="text-description">
+        Most ICECREAM restaurants are owned by independent operators who enter into a franchise
+        agreement with the company. Franchisees must have a business background and the capital
+        required to open a restaurant. “Entrepreneur” listed ICECREAM restaurant startup costs from
+        $500000 to $100000. Franchise agreements are for 20 years and include a number of standards
+        and legal requirements that franchisees must follow, including adhering to menu items,
+        employee training, and the use of company products, such as soft goods. ICECREAM has
+        terminated franchise agreements for a variety of infractions.
+      </p>
+
+      <b class="text-main"> Leave your details we will call you back </b>
+      <form class="form-registration" autocomplete="off">
+        <h2 class="visually-hidden">Form</h2>
+
+        <div class="form-registration__field">
+          <label class="form-registration__label" for="form-name"> Name </label>
+
+          <div class="form-registration__wrap-input">
+            <input
+              id="form-name"
+              class="form-registration__input"
+              type="text"
+              name="form-name"
+              placeholder=" "
+            />
+
+            <svg
+              class="form-registration__icon form-registration__icon--displacement"
+              width="18"
+              height="18"
+            >
+              <use href="./images/footer_img/symbol-defs.svg#icon-person-icon-modal"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="form-registration__field">
+          <label class="form-registration__label" for="form-phone"> Phone </label>
+
+          <div class="form-registration__wrap-input">
+            <input
+              id="form-phone"
+              class="form-registration__input"
+              type="number"
+              name="form-phone"
+              placeholder=" "
+            />
+
+            <svg
+              class="form-registration__icon form-registration__icon--displacement"
+              width="18"
+              height="18"
+            >
+              <use href="./images/footer_img/symbol-defs.svg#icon-phone-icon-modal"></use>
+            </svg>
+          </div>
+        </div>
+        <button type="submit" class="primary-btn">Send</button>
+      </form>
     </div>
   </div>
 </div>
