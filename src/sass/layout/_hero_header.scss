@@ -92,8 +92,9 @@
 
 .hero__button {
     display: inline-block;
-    border: transparent;
-	@@ -54,12 +147,23 @@
+    border: transparent;}
+
+  
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: center;
@@ -117,8 +118,7 @@
     @media screen and (max-width: 1199px) {
         display: inline-flex;
         margin: 0;
-	@@ -69,20 +173,68 @@
-        margin-bottom: 32px;
+        margin-bottom: 32px;}
         // transform: rotate(-90deg);
 
 
@@ -185,8 +185,8 @@
     .hero-list{
 .site-nav__icon {
     z-index: 3;
-    position: fixed;
-	@@ -137,47 +289,211 @@
+    position: fixed;}
+
 
 
         @media screen and (min-width: 1200px) {
