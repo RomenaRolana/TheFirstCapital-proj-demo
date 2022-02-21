@@ -1,5 +1,19 @@
 .header-hero{
     background-color: var(--hero-bg-color);
+    position: relative;
+
+    &::before{
+        content: '';
+        display: block;
+        width: 538px;
+        height: 538px;
+        border-radius: 538px;
+        background-color: var(--third-logo-color);
+        position: absolute;
+        left: 37%;
+        top: 6%;
+        z-index: 0;
+    }
 }
 
 
@@ -16,6 +30,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    z-index: 2;
 
     &__text{
 
@@ -51,6 +66,7 @@
     border-radius: 22px;
     border: none;
     cursor: pointer;
+    z-index: 2;
 
     @media screen and (max-width: 767px) {
         margin-left: 30px;
@@ -73,6 +89,7 @@
 
     &__item{
         margin-right: 35px;
+        z-index: 2;
     }
 
     &__link{
@@ -81,6 +98,7 @@
         line-height: 1.31;
         color: var(--secondary-logo-color);
         text-decoration: none;
+        z-index: 2;
     }
 
     &__link--current-page{
@@ -102,6 +120,8 @@
     justify-content: space-between;
     padding-bottom: 56px;
 
+    position: relative;
+
 }
 
 
@@ -121,41 +141,70 @@
     }
 }
 
+    .hero-list{
+        display: flex;
+        list-style: none;
+        margin-top: 25px;
+
+        &__item:first-child{
+            margin-right: 15px;
+        }
+
+        &__link{
+            font-size: 14px;
+            line-height: 1.28;
+            font-weight: 400;
+            padding: 10px 22px;
+            border-radius: 22px;
+            border: none;
+            text-decoration: none;
+          
+            background-color: var(--first-logo-color);
+            color: var(--secondary-logo-color);
+            text-align: center;
+        }
+
+        &__link:hover, &__link:focus{
+            background-color: var(--primary-btn-hover);
+        }
+
+        &__link--alternative{
+            background-color: var(--secondary-logo-color);
+            color: var(--first-logo-color);
+        }
+    
+        &__link--alternative:hover, &__link--alternative:focus{
+            background-color: #ecebeb;
+            color: var(--first-logo-color);
+        }
+
+    }
+
 
   .hero-btn {  
-    display: inline-block;
-    margin-top: 25px;
-
-    font-size: 16px;
-    line-height: 2.75;
-    font-weight: 700;
-    padding: 0 15px;
-    border-radius: 22px;
-    min-width: 160px;
-    border: 0px solid transparent;
-  
-    background-color: var(--first-logo-color);
-    color: var(--secondary-logo-color);
+    margin-top: 20px;
+    margin-left: 180px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-logo-color);
+    border-radius: 50px;
+    border: none;
     cursor: pointer;
-  
-    &:hover,
-    &:focus {
-      background-color: var(--primary-btn-hover);
-    }
 
-    &--alternative{
-        background-color: var(--secondary-logo-color);
-        color: var(--first-logo-color);
-        margin-left: 15px;
+    &__icon{
+        width: 12px;
+        height: 12px;
+        stroke: var(--first-logo-color);
     }
+}
 
-    &--alternative:hover, &--alternative:focus{
-        background-color: #ecebeb;
-        color: var(--first-logo-color);
-    }
-  }
+.hero-container{
+    position: relative;
+}
 
 
 .hero-text{
@@ -169,39 +218,28 @@
     line-height: 1.4;
     font-weight: 400;
     color: var(--secondary-logo-color);
-}
 
-.extra-button {
-        margin-top: 20px;
-        margin-left: 180px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        width: 40px;
-        height: 40px;
-        background-color: var(--secondary-logo-color);
-        border-radius: 50px;
-        border: none;
-        cursor: pointer;
 
-    &__icon{
-        width: 12px;
-        height: 12px;
-        stroke: var(--first-logo-color);
-        // transition: var(--animation-duration) var(--animation-timing-function);
+    &::before{
+        content: "";
+        display: block;
+        width: 188px;
+        height: 191px;
+        position: absolute;
+        bottom: 0;
+        left: -30px;
+        background-image: url(../images/hero_header_img/milk.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+
     }
-    
-    //     &:hover .products__icon,
-    //     &:focus .products__icon {
-    //       stroke: #ab042c;
-    
-    //   }
 }
+
 
 
 .extra-list{
     list-style: none;
+    position: relative;
 
     &__item{
 
@@ -241,4 +279,28 @@
         color: var(--secondary-logo-color);
         text-transform: lowercase;
     }
+}
+
+.icecream-pic{
+    display: block;
+    width: 236px;
+    height: 557px;
+    background-image: url(../images/hero_header_img/icecream-pic.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+}
+
+.lady-pic{
+    display: block;
+    width: 293px;
+    height: 232px;
+    background-image: url(../images/hero_header_img/lady.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
