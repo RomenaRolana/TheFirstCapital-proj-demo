@@ -1,4 +1,6 @@
-
+.header-hero{
+    background-color: var(--hero-bg-color);
+    position: relative;
     &::before{
         content: '';
         display: block;
@@ -16,7 +18,7 @@
         // left: 36px;
         z-index: 0;
     }
-
+}
 
 
 .header{
