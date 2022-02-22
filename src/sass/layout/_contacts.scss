@@ -142,7 +142,7 @@
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-    background: #f0d1a5;
+    background: var(--second-card);
     color: var(--secondary-logo-color);
     border-radius: 4px;
     border: 1px solid transparent;
@@ -175,17 +175,6 @@
 }
 
 .schedul {
-  &__item {
-    @media screen and (min-width: 1280px) {
-      background: repeating-linear-gradient(
-        0deg,
-        transparent 0 233px,
-        #e1e1e1 233px 234px,
-        transparent 234px 429px,
-        #e1e1e1 429px 430px
-      );
-    }
-  }
   &__list {
     margin-bottom: 25px;
     padding-bottom: 25px;
