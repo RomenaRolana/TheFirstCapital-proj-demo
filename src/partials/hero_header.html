@@ -5,7 +5,7 @@
 
 
         <div class="logo">
-            <img src="./images/hero_header_img/logo.png" alt="icecream logo" class="logo__icon">
+            <img src="./images/hero_header_img/logo.png" srcset="./images/hero_header_img/logo.png 1x, ./images/hero_header_img/logo_2x.png 2x, ./images/hero_header_img/logo_3x.png 3x" alt="icecream logo" class="logo__icon">
             <p class="logo__text">icecream</p>
         </div>
 
@@ -19,6 +19,14 @@
             </ul>
         </nav>
 
+
+        <button type="button" class="menu-btn" data-menu-open>
+            <svg class="menu-btn__icon">
+                <use href="./images/sprite_img/symbol-defs-min.svg#icon-burger">
+                </use>
+            </svg>
+        </button>
+
         <button type="button" class="header-btn">
             Buy now 
             <svg class="header-btn__icon">
@@ -26,6 +34,8 @@
                 </use>
             </svg>
         </button>
+        
+
     </header>
 
     <section class="container hero">
@@ -33,7 +43,9 @@
         <div class="icecream-pic">
         </div>
 
-        <div>
+      
+
+        <div class="hero-content">
 
             <h1 class="hero-title">
                 ice cream
