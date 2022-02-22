@@ -12,7 +12,7 @@
     background-color: #fafafa;
     padding-left: 20px;
     padding-right: 20px;
-    background-image: url(../images/customer_reviews_img/lapky.svg);
+    background-image: url(./images/customer_reviews_img/lapky.svg);
     background-repeat: no-repeat;
     background-size: 54px 40px;
     background-position: top 28px left 61px;
@@ -92,7 +92,7 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      background-image: url(../images/customer_reviews_img/group.svg);
+      background-image: url(./images/customer_reviews_img/group.svg);
     }
   }
 }
@@ -114,7 +114,7 @@
       }
       &.slick-active {
         background-color: transparent;
-        background-image: url(../images/customer_reviews_img/home_dot.svg);
+        background-image: url(./images/customer_reviews_img/home_dot.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
