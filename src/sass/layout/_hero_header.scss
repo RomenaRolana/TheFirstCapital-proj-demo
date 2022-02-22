@@ -2,6 +2,7 @@
     background-color: var(--hero-bg-color);
     // position: relative;
     overflow: hidden;
+
 }
 
 
@@ -10,6 +11,7 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 6px;
+    z-index: 999;
 
     @media screen and(min-width:768px) {
     padding-top: 38px;
@@ -62,6 +64,7 @@
     display: block;
     background-color: transparent;
     border:none;
+    z-index: 999;
 
     &__icon{
         display: block;
@@ -191,6 +194,16 @@
 
         z-index: 0;
 
+        @media screen and(min-width:768px) {
+            min-width: 324px;
+            min-height: 322px;
+            border-radius: 322px;
+
+            left: 307px;
+            bottom: 46px;
+
+        }
+
         // @media screen and(min-width:1280px) {
         //     width: 538px;
         //     height: 538px;
@@ -314,8 +327,8 @@
     justify-content: center;
     align-items: center;
 
-    width: 40px;
-    height: 40px;
+    width: 18px;
+    height: 18px;
     background-color: var(--secondary-logo-color);
     border-radius: 50px;
     border: none;
@@ -324,12 +337,20 @@
     @media screen and(min-width:1280px) {
         margin-top: 20px;
         margin-left: 180px;
+        width: 26px;
+        height: 26px;
     }
 
     &__icon{
-        width: 12px;
-        height: 12px;
+
         stroke: var(--first-logo-color);
+        width: 6px;
+        height: 6px;
+
+        @media screen and(min-width:1280px) {
+            width: 12px;
+            height: 12px;
+        }
     }
 }
 
@@ -372,14 +393,41 @@
     &::before{
         content: "";
         display: block;
-        width: 188px;
-        height: 191px;
+        width: 124px;
+        height: 126px;
+
         position: absolute;
         bottom: 0;
-        left: -30px;
-        background-image: url(../images/hero_header_img/milk.png);
+ 
+        left: 0;
+        background-image: url(../images/hero_header_img/milk_tab.png);
         background-repeat: no-repeat;
         background-size: contain;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        
+          background-image: 
+          url(../images/hero_header_img/milk_tab_2x.png);
+         }
+    
+         @media screen and (min-device-pixel-ratio: 3),
+         screen and (min-resolution: 288dpi),
+         screen and (min-resolution: 3dppx) {
+         
+           background-image: 
+           url(../images/hero_header_img/milk_tab_3x.png);
+          }
+    
+
+        @media screen and(min-width:1280px) {
+            width: 188px;
+            height: 191px;
+            left: -30px;
+        }
+
+
 
     }
 }
@@ -402,8 +450,8 @@
 
         font-family: Titan One;
         font-weight: 400;
-        font-size: 46px;
-        line-height: 1.15;
+        font-size: 28px;
+        line-height: 1.14;
         text-align: right;
         letter-spacing: 0.04em;
         text-transform: uppercase;
@@ -413,28 +461,44 @@
         margin-bottom: 15px;
 
         position: relative;
+
+        @media screen and(min-width:1280px) {
+            font-size: 46px;
+            line-height: 1.15;
+        }
     }
 
     &__item::after{
         content: '';
         display: block;
-        width: 30px;
-        height: 30px;
+        width: 16px;
+        height: 16px;
         border-radius: 50px;
         background-color: var(--secondary-logo-color);
         position: absolute;
         top: 0;
-        right: -13px;
+        right: -6px;
         z-index: -1;
+
+        @media screen and(min-width:1280px) {
+            width: 30px;
+            height: 30px;
+            right: -13px;
+        }
     }
 
     &__text{
         display: block;
         font-family: DM Sans;
-        font-size: 14px;
-        line-height: 1.28;
+        font-size: 8px;
+        line-height: 1.25;
         color: var(--secondary-logo-color);
         text-transform: lowercase;
+
+        @media screen and(min-width:1280px) {
+            font-size: 14px;
+            line-height: 1.28;
+        }
     }
     }
 }
@@ -469,6 +533,33 @@
        url(../images/hero_header_img/icecream_tel_3x.png);
       }
 
+    @media screen and(min-width:768px) {
+        width: 143px;
+        height: 336px;
+
+        right: 247px;
+
+        background-image: 
+        url(../images/hero_header_img/icecream_tab.png);
+ 
+           @media screen and (min-device-pixel-ratio: 2),
+           screen and (min-resolution: 192dpi),
+           screen and (min-resolution: 2dppx) {
+           
+            background-image: 
+            url(../images/hero_header_img/icecream_tab_2x.png);
+            }
+
+            @media screen and (min-device-pixel-ratio: 3),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+            
+             background-image: 
+             url(../images/hero_header_img/icecream_tab_3x.png);
+             }
+        }  
+
+
     @media screen and(min-width:1280px) {
             width: 236px;
             height: 557px;
@@ -482,14 +573,38 @@
     @media screen and(min-width:768px) {
         
     display: block;
-    width: 293px;
-    height: 232px;
-    background-image: url(../images/hero_header_img/lady.png);
+    width: 168px;
+    height: 133px;
+    background-image: url(../images/hero_header_img/lady_tab.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     bottom: 0;
     right: 0;
+    }
+
+     
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    
+     background-image: 
+     url(../images/hero_header_img/lady_tab_2x.png);
+     }
+
+     @media screen and (min-device-pixel-ratio: 3),
+     screen and (min-resolution: 288dpi),
+     screen and (min-resolution: 3dppx) {
+     
+      background-image: 
+      url(../images/hero_header_img/lady_tab_3x.png);
+      }
+
+
+
+    @media screen and(min-width:1280px) {
+        width: 293px;
+        height: 232px;
     }
 }
 
