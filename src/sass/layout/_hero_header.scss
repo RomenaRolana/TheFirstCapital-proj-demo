@@ -1,7 +1,6 @@
 
 .header-hero{
     background-color: var(--hero-bg-color);
-    // position: relative;
     overflow: hidden;
 
 }
@@ -66,11 +65,20 @@
     background-color: transparent;
     border:none;
     z-index: 999;
+    cursor: pointer;
+
+    &:hover .menu-btn__icon,
+    &:focus .menu-btn__icon {
+      stroke: var(--secondary-logo-color);
+    }
 
     &__icon{
         display: block;
         width: 20px;
         height: 12px;
+        stroke: var(--first-logo-color);
+        transition: stroke var(--animation-duration) var(--animation-timing-function),
+        color var(--animation-duration) var(--animation-timing-function);
     }
 
     @media screen and(min-width:768px) {
@@ -102,6 +110,13 @@
         border: none;
         cursor: pointer;
         z-index: 2;
+        transition: background-color var(--animation-duration) var(--animation-timing-function),
+        color var(--animation-duration) var(--animation-timing-function);
+
+        &:hover, &:focus{
+            background-color: #ecebeb;
+            color: var(--first-logo-color);
+        }
 
 
     &__icon{
@@ -141,6 +156,8 @@
         color: var(--secondary-logo-color);
         text-decoration: none;
         z-index: 2;
+        transition: color var(--animation-duration) var(--animation-timing-function),
+        color var(--animation-duration) var(--animation-timing-function);
     }
 
     &__link--current-page{
@@ -286,6 +303,8 @@
                 color: var(--secondary-logo-color);
                 text-align: center;
                 z-index: 2;
+                transition: background-color var(--animation-duration) var(--animation-timing-function),
+                color var(--animation-duration) var(--animation-timing-function);
 
                 @media screen and(min-width:1280px) {
                     font-size: 14px;
@@ -331,12 +350,23 @@
     border-radius: 50px;
     border: none;
     cursor: pointer;
+    transition: background-color var(--animation-duration) var(--animation-timing-function),
+    color var(--animation-duration) var(--animation-timing-function);
+
+    &:hover, &:focus{
+        background-color: var(--primary-btn-hover);
+    }
+
+    &:hover .hero-btn__icon,
+    &:focus .hero-btn__icon {
+      stroke: var(--secondary-logo-color);
+    }
 
     @media screen and(min-width:1280px) {
         margin-top: 20px;
         margin-left: 180px;
-        width: 26px;
-        height: 26px;
+        width: 40px;
+        height: 40px;
     }
 
     &__icon{
@@ -345,9 +375,12 @@
         width: 6px;
         height: 6px;
 
+        transition: stroke var(--animation-duration) var(--animation-timing-function),
+    color var(--animation-duration) var(--animation-timing-function);
+
         @media screen and(min-width:1280px) {
-            width: 10px;
-            height: 10px;
+            width: 12px;
+            height: 12px;
         }
     }
 }
