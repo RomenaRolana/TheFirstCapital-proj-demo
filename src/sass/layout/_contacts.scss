@@ -245,6 +245,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(360deg) scale(1);
+  transition: transform var(--animation-duration) var(--animation-timing-function);
   max-width: 600px;
   max-height: 400px;
   padding: 20px;
