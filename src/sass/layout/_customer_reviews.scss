@@ -50,7 +50,6 @@
       margin-bottom: 15px;
     }
   }
-
   &__text {
     font-weight: 500;
     font-size: 12px;
@@ -62,18 +61,19 @@
     margin-left: auto;
     margin-top: 43px;
     margin-bottom: 26px;
-    background-image: repeating-linear-gradient(0deg, #e1e1e1 0 1px, transparent 1px 31px);
+    background-image: repeating-linear-gradient(0deg, #e1e1e1 0px 1px, transparent 1px 31px);
     @media screen and (min-width: 768px) {
       width: 544px;
       margin-top: 47px;
       margin-bottom: 34px;
     }
     @media screen and (min-width: 1280px) {
-      width: 926px;
+      width: 822px;
       margin-top: 47px;
       margin-bottom: 39px;
     }
   }
+
   &__name {
     font-weight: 500;
     font-size: 16px;
@@ -96,7 +96,6 @@
     }
   }
 }
-
 .autoplay {
   .slick-dots {
     display: flex;
