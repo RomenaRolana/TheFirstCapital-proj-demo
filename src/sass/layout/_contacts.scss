@@ -331,6 +331,12 @@
   align-items: center;
   text-align: center;
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    min-width: 190px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 198px;
+  }
 
   &:hover,
   &:focus {
@@ -441,6 +447,7 @@
   right: 0;
   text-align: center;
   padding: 10px;
+  z-index: 100;
 
   box-shadow: 0px 8px 30px var(--secondary-logo-color);
   &:hover,
@@ -529,7 +536,7 @@
   top: 50%;
   transform: translateY(-50%);
   fill: var(--third-logo-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--animation-duration) var(--animation-timing-function);
 
   .form-registration__input:focus + &,
   .form-registration__input:not(:placeholder-shown) + & {
@@ -553,5 +560,16 @@
   margin-top: 10px;
   @media screen and (min-width: 768px) {
     margin-top: 15px;
+  }
+}
+
+.map {
+  transform: scale(1);
+  transition: transform var(--animation-duration) var(--animation-timing-function);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    transition: transform var(--animation-duration) var(--animation-timing-function);
   }
 }
