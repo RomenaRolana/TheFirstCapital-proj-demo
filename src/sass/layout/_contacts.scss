@@ -39,6 +39,32 @@
     }
   }
 }
+.web {
+  .contacts {
+    @media screen and (min-width: 1280px) {
+      padding-top: 60px;
+      padding-bottom: 80px;
+      background-image: url(../images/contacts_img/contacrs-bg-1x.webp),
+        linear-gradient(
+          to bottom,
+          var(--secondary-logo-color) 0 165px,
+          var(--secondary-bg-color) 165px
+        );
+      background-position: top 150px center, center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/contacts_img/contacrs-bg-2x.webp),
+          linear-gradient(
+            to bottom,
+            var(--secondary-logo-color) 0 165px,
+            var(--secondary-bg-color) 165px
+          );
+      }
+    }
+  }
+}
 
 // .contacts-main {
 //   padding-top: 45px;
