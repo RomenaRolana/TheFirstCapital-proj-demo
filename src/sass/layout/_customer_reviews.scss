@@ -50,7 +50,6 @@
       margin-bottom: 15px;
     }
   }
-
   &__text {
     font-weight: 500;
     font-size: 12px;
@@ -69,11 +68,12 @@
       margin-bottom: 34px;
     }
     @media screen and (min-width: 1280px) {
-      width: 926px;
+      width: 822px;
       margin-top: 47px;
       margin-bottom: 39px;
     }
   }
+
   &__name {
     font-weight: 500;
     font-size: 16px;
@@ -96,7 +96,6 @@
     }
   }
 }
-
 .autoplay {
   .slick-dots {
     display: flex;
