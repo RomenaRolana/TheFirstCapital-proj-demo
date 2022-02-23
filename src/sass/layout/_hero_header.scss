@@ -8,8 +8,8 @@
     background-image: url(../images/hero_header_img/icecream_tel.png), url(../images/sprite_img/ellipse.svg);
     background-repeat: no-repeat;
     background-size: 170px 410px, 345px;
-    background-position: bottom center,
-center left calc(100% / 2 + 50px);
+    background-position: bottom 0 left calc(50% + 40px),
+    bottom 50% left calc(50% + 50px);
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -32,6 +32,8 @@ url(../images/sprite_img/ellipse.svg);
     @media screen and(min-width:768px) {
         padding-top: 38px;
         background-size: 143px 336px, 345px;
+        background-position: bottom 0 left calc(50% + 40px),
+        bottom 50% left calc(50% + 60px);
         
         background-image:
             url(../images/hero_header_img/icecream_tab.png),
@@ -63,6 +65,8 @@ url(../images/sprite_img/ellipse.svg);
         background-image:
             url(../images/hero_header_img/icecream_desk.png),
 url(../images/sprite_img/ellipse.svg);
+        background-position: bottom 0 left calc(50% + 80px),
+        bottom calc(50% + 10px) left calc(50% + 100px);
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -339,6 +343,7 @@ url(../images/sprite_img/ellipse.svg);
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--secondary-logo-color);
+    margin-bottom: 19px;
    
     
     @media screen and(min-width:768px) {
@@ -380,6 +385,7 @@ url(../images/sprite_img/ellipse.svg);
 
     @media screen and(min-width:1280px) {
         margin-bottom: 55px;
+
     }
 
 
