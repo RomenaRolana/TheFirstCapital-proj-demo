@@ -1,4 +1,5 @@
-(() => {
+// (() => {
+    import $ from "jquery";
     const menuBtnRef = document.querySelector("[data-menu-button]");
     const mobileMenuRef = document.querySelector("[data-menu]");
     menuBtnRef.addEventListener("click", () => {
@@ -9,4 +10,7 @@
 
         mobileMenuRef.classList.toggle("is-open");
     })
-})();
+$(window).on("scroll", function () {
+        $(".nav-js").toggleClass("is-fixed",$(this).scrollTop()>$(".hero").height())
+    })
+// })();

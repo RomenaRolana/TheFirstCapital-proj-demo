@@ -8,25 +8,6 @@
     padding-top: 60px;
     padding-bottom: 65px;
   }
-  &__bg {
-    background-color: #fafafa;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-image: url(../images/customer_reviews_img/lapky.svg);
-    background-repeat: no-repeat;
-    background-size: 54px 40px;
-    background-position: top 28px left 61px;
-    @media screen and (min-width: 768px) {
-      padding-left: 74px;
-      padding-right: 74px;
-      background-position: top 30px left 40px;
-    }
-    @media screen and (min-width: 1280px) {
-      padding-left: 178px;
-      padding-right: 176px;
-      background-position: top 32px left 50px;
-    }
-  }
 
   &__slide {
     text-align: center;
@@ -34,6 +15,28 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  &__bg {
+    background-color: #fafafa;
+    background-image: url(../images/customer_reviews_img/lapky.svg);
+    background-repeat: no-repeat;
+    background-size: 54px 40px;
+    background-position: top 28px left 61px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 43px 66px 26px 57px;
+    width: 280px;
+    @media screen and (min-width: 768px) {
+      width: 620px;
+      background-position: top 30px left 40px;
+      padding: 47px 80px 34px 80px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 926px;
+      background-position: top 32px left 50px;
+      padding: 47px 89px 39px 87px;
+    }
   }
 
   &__foto {
@@ -56,22 +59,15 @@
     font-size: 12px;
     line-height: 30px;
     text-align: center;
-    width: 157px;
     display: inline-block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 43px;
-    margin-bottom: 26px;
-    background-image: repeating-linear-gradient(0deg, #e1e1e1 0px 1px, transparent 1px 31px);
+    background-image: repeating-linear-gradient(0deg, #e1e1e1 0.1px 1px, transparent 1px 31px);
     @media screen and (min-width: 768px) {
-      width: 544px;
-      margin-top: 47px;
-      margin-bottom: 34px;
+      font-size: 14px;
+      letter-spacing: 0.04em;
     }
     @media screen and (min-width: 1280px) {
-      width: 926px;
-      margin-top: 47px;
-      margin-bottom: 39px;
+      font-size: 16px;
+      letter-spacing: 0.04em;
     }
   }
   &__name {
