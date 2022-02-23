@@ -66,7 +66,7 @@ url(../images/sprite_img/ellipse.svg);
             url(../images/hero_header_img/icecream_desk.png),
 url(../images/sprite_img/ellipse.svg);
         background-position: bottom 0 left calc(50% + 80px),
-        bottom calc(50% + 10px) left calc(50% + 100px);
+        bottom calc(50% + 20px) left calc(50% + 100px);
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -505,6 +505,7 @@ url(../images/sprite_img/ellipse.svg);
 .hero-text{
     display: block;
     margin-bottom: 7px;
+    max-width: 114px;
 
     font-size: 8px;
     line-height: 1.5;
@@ -515,6 +516,8 @@ url(../images/sprite_img/ellipse.svg);
     @media screen and(min-width:1280px) {
         font-size: 14px;
         line-height: 1.4;
+        margin-bottom: 20px;
+        max-width: 200px;
     }
 
 
