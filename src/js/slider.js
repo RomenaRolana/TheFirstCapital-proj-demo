@@ -1,5 +1,5 @@
-import $ from "jquery";
-import slick from "slick-carousel";
+import $ from "jquery"; // jquerry is outdated, better use REACT
+import slick from "slick-carousel"; // react slick is better
 
 $('.autoplay').slick({
     slidesToShow: 1,
