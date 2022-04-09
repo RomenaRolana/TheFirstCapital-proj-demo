@@ -10,10 +10,10 @@
 
         mobileMenuRef.classList.toggle("is-open");
 
-    })
-    const navLinks = document.querySelectorAll("[data-nav-link]")
-    navLinks.forEach(e=>{
-        e.addEventListener("click", ()=>{
+    });
+    const navLinks = document.querySelectorAll("[data-nav-link]");
+    navLinks.forEach(e => {
+        e.addEventListener("click", () => {
             if(mobileMenuRef.classList.contains("is-open")){
                 menuBtnRef.classList.toggle("is-open");
    menuBtnRef.setAttribute("aria-expanded", !expanded);
@@ -21,9 +21,9 @@
     mobileMenuRef.classList.toggle("is-open");
             } 
         })  
-    })
+    });
 
 $(window).on("scroll", function () {
         $(".nav-js").toggleClass("is-fixed",$(this).scrollTop()>$(".hero").height())
-    })
+    });
 // })();  unnecessary comments
