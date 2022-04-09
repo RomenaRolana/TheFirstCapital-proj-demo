@@ -25,4 +25,6 @@
   function toggleContacts(modal) {
     modal.classList.toggle('is-hidden');
   }
-})();
+})(); /* anonymous function is good, 
+but better use function declaration or function expression,
+because you use HTML&&Css */

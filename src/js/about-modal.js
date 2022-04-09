@@ -1,4 +1,7 @@
   // Modal for section ABOUT
+ /*
+  this is better than 'modal.js'
+ */
   (() => {
 
     const refs = {
@@ -20,4 +23,3 @@
       modal.classList.toggle('is-hidden');
     }
   })();
-  
